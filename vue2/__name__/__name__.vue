@@ -1,11 +1,11 @@
 <template>
-    <div class="{{ name }}">
+    <div class="{{name}}">
     
     </div>
 </template>
 <script>
 export default {
-    name: '{{ name }}',
+    name: '{{name}}',
     data() {
         return {
 

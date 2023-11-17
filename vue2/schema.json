@@ -8,7 +8,7 @@
         {
             "name": "name",
             "aliases": [
-                "name", "n"
+                "n"
             ],
             "require": true,
             "description": "the component name"

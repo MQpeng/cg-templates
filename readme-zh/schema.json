@@ -3,5 +3,15 @@
     "aliases": [
         "rdmzh"
     ],
-    "description": "完美的README中文模板"
+    "description": "完美的README中文模板",
+    "flags": [
+        {
+            "name": "output",
+            "aliases": [
+                "o"
+            ],
+            "default": "README",
+            "description": "README的文件名，例如[--output=README_zh]"
+        }
+    ]
 }

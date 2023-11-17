@@ -1,13 +1,13 @@
 {
     "name": "vue3",
-    "alias": [
+    "aliases": [
         "v3"
     ],
     "description": "vue3 component init template",
     "flags": [
         {
             "name": "templateName",
-            "alias": [
+            "aliases": [
                 "name", "n"
             ],
             "require": true,

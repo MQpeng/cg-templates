@@ -4,6 +4,7 @@
         "rdmzh"
     ],
     "description": "Best-README-Template",
+    "driver": "text/template",
     "flags": [
         {
             "name": "output",

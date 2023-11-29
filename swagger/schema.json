@@ -1,0 +1,23 @@
+{
+    "name": "readme_zh",
+    "aliases": [
+        "rdmzh"
+    ],
+    "description": "Best-README-Template",
+    "flags": [
+        {
+            "name": "output",
+            "aliases": [
+                "o"
+            ],
+            "default": "README",
+            "description": "file name [--output=README_en]"
+        },
+        {
+            "name": "swagger",
+            "type": "url",
+            "default": "http://localhost:8003/openapi.json",
+            "description": "the repeat age"
+        }
+    ]
+}

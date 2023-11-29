@@ -31,9 +31,13 @@ export const {{$operationId}} = ({{range $i, $param := $params}}{{$param}}:strin
     {{-  GetStr "$ref" $body.schema | SplitBy "/" | LastStr -}}
     {{- else if In $value2.requestBody.content `application/json` -}}
     {{ $body := Get `application/json` $value2.requestBody.content}}
-    {{-  GetStr "$ref" $body.schema | SplitBy "/" | LastStr -}}
+    {{- if In $body.schema "type" -}}
+    {{- $body.schema | SchemaToTsType -}}
     {{- else -}}
-    {{ In $value2.requestBody.content `application/json` }}
+    {{-  GetStr "$ref" $body.schema | SplitBy "/" | LastStr -}}
+    {{- end -}}
+    {{- else -}}
+    any
     {{- end -}}
     {{- end -}}
     ) => ({

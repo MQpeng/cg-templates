@@ -13,7 +13,7 @@ export interface {{$model}} {
     {{$property}}
     {{- if Contains $required $property}}{{else}}?{{end -}}
     :
-    {{- $propBody | SchemaToTsType }}
+    {{- $propBody | SchemaToTsType -}}
     {{ end }}
 }
 {{ end -}}
